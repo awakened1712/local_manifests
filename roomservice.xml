@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!--Remotes-->
+    <remote name="source"          fetch="https://github.com/awakened1712"/>
+    <remote name="muppets"         fetch="https://github.com/TheMuppets"/>
+    <remote name="lineage"         fetch="https://github.com/LineageOS"/>
+
+    <!--Devices Trees-->
+    <project name="android_device_samsung_beyond0lte"              path="device/samsung/beyond0lte"        remote="lineage"        revision="lineage-20" />
+    <project name="android_device_samsung_beyond1lte"              path="device/samsung/beyond1lte"        remote="lineage"        revision="lineage-20" />
+    <project name="android_device_samsung_beyond2lte"              path="device/samsung/beyond2lte"        remote="lineage"        revision="lineage-20" />
+    <project name="android_device_samsung_beyondx"                 path="device/samsung/beyondx"           remote="lineage"        revision="lineage-20" />
+    <project name="android_device_samsung_d1"                      path="device/samsung/d1"                remote="lineage"        revision="lineage-20" />
+    <project name="android_device_samsung_d2s"                     path="device/samsung/d2s"               remote="lineage"        revision="lineage-20" />
+    <project name="android_device_samsung_d2x"                     path="device/samsung/d2x"               remote="lineage"        revision="lineage-20" />
+    <project name="android_device_samsung_exynos9820-common"       path="device/samsung/exynos9820-common" remote="source"         revision="lineage-20" />
+    <project name="android_device_oneplus_lemonadep"               path="device/oneplus/lemonadep"         remote="source"         revision="lineage-20" />
+    <project name="android_device_oneplus_sm8350-common"           path="device/oneplus/sm8350-common"     remote="source"         revision="lineage-20" />
+
+    <!--Vendors Trees-->
+    <project name="proprietary_vendor_samsung_beyond0lte"          path="vendor/samsung/beyond0lte"        remote="muppets"        revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_samsung_beyond1lte"          path="vendor/samsung/beyond1lte"        remote="muppets"        revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_samsung_beyond2lte"          path="vendor/samsung/beyond2lte"        remote="muppets"        revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_samsung_beyondx"             path="vendor/samsung/beyondx"           remote="muppets"        revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_samsung_d1"                  path="vendor/samsung/d1"                remote="muppets"        revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_samsung_d2s"                 path="vendor/samsung/d2s"               remote="muppets"        revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_samsung_d2x"                 path="vendor/samsung/d2x"               remote="muppets"        revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_samsung_exynos9820-common"   path="vendor/samsung/exynos9820-common" remote="muppets"        revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_oneplus_lemonadep"           path="vendor/oneplus/lemonadep"         remote="source"         revision="lineage-20"   clone-depth="1" />
+    <project name="proprietary_vendor_oneplus_sm8350-common"       path="vendor/oneplus/sm8350-common"     remote="source"         revision="lineage-20"   clone-depth="1" />
+
+    <!--Kernel Tree-->
+    <project name="android_kernel_samsung_exynos9820"              path="kernel/samsung/exynos9820"        remote="source"         revision="lineage-20" />
+    <project name="android_kernel_oneplus_sm8350"                  path="kernel/oneplus/sm8350"            remote="source"         revision="lineage-20" />
+
+    <!-- Dependencies -->
+    <project name="android_device_samsung_slsi_sepolicy"           path="device/samsung_slsi/sepolicy"     remote="lineage"        revision="lineage-20" />
+    <project name="android_hardware_samsung"                       path="hardware/samsung"                 remote="lineage"        revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_openmax"   path="hardware/samsung_slsi-linaro/openmax"  remote="lineage"   revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_exynos"    path="hardware/samsung_slsi-linaro/exynos"   remote="lineage"   revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_exynos5"   path="hardware/samsung_slsi-linaro/exynos5"  remote="lineage"   revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_config"    path="hardware/samsung_slsi-linaro/config"   remote="lineage"   revision="lineage-20" />
+    <project name="android_hardware_samsung_slsi-linaro_graphics"  path="hardware/samsung_slsi-linaro/graphics" remote="lineage"   revision="lineage-20" />
+    <project name="android_hardware_oplus"                         path="hardware/oplus"                   remote="source"         revision="lineage-20" />
+
+</manifest>
