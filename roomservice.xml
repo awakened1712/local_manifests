@@ -37,4 +37,9 @@
     <!-- GApps -->
     <project name="vendor_gapps"                                path="vendor/gapps"                     remote="mtg"            revision="tau" />
 
+    <!-- frameworks/base -->
+    <remove-project name="crdroidandroid/android_frameworks_base" />
+    <project name="android_frameworks_base"                     path="frameworks/base"                  remote="source"         revision="crdroid-13" />
+
+
 </manifest>
