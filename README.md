@@ -57,7 +57,7 @@ $ brunch lineage_beyond1lte-userdebug
 ```
 
 ## 2. Fixup ##
-Open `` and delete the following lines
+Open `/vendor/gapps/arm64/arm64-vendor.mk` and delete the following lines
 ```
 PRODUCT_COPY_FILES += \
     vendor/gapps/arm64/proprietary/product/lib/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libjni_latinimegoogle.so \
