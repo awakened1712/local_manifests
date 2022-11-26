@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
 ```
 
 ## 3. Upload ##
-Create OAuth client ID to generate client_id and client_secret
+Create OAuth client ID for TV and Limited input devices to generate client_id and client_secret
 ```python
 #!/usr/bin/python
 '''
