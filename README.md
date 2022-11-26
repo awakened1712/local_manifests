@@ -66,6 +66,7 @@ PRODUCT_COPY_FILES += \
 
 ## 3. Upload ##
 Create OAuth client ID for TV and Limited input devices to generate client_id and client_secret
+Save the below file as curlgoogle into `~/bin`
 ```python
 #!/usr/bin/python
 '''
@@ -99,5 +100,6 @@ print('end')
 ```
 Run the upload script
 ```bash
-python3 curlgoogle PATH_TO_FILE
+cd FILE_PATH
+curlgoogle FILE
 ```
