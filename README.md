@@ -36,7 +36,7 @@ $ mkdir crDroid
 $ cd crDroid
 
 # Install Repo in the created directory
-$ repo init -u https://github.com/crdroidandroid/android.git -b 13.0
+$ repo init -u https://github.com/awakened1712/android.git -b 13.0
 $ git clone https://github.com/awakened1712/local_manifests.git .repo/local_manifests -b android-13
 ```
 
