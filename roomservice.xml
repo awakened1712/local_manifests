@@ -6,6 +6,7 @@
     <remote name="LineageOS"       fetch="https://github.com/LineageOS" />
     <remote name="linux4"          fetch="https://github.com/Linux4"/>
     <remote name="mtg"             fetch="https://gitlab.com/MindTheGapps"/>
+    <remote name="acmeui"          fetch="https://github.com/AcmeUI"/>
 
     <!--Devices Trees-->
     <project name="android_device_samsung_beyond0lte"           path="device/samsung/beyond0lte"        remote="source"         revision="android-13" />
@@ -41,5 +42,8 @@
     <remove-project name="crdroidandroid/android_frameworks_base" />
     <project name="android_frameworks_base"                     path="frameworks/base"                  remote="source"         revision="crdroid-13" />
 
+    <!-- platform/extern/zlib -->
+    <remove-project name="platform/external/zlib" />
+    <project name="android_external_zlib-ng"                    path="external/zlib"                    remote="acmeui"         revision="taffy" />
 
 </manifest>
