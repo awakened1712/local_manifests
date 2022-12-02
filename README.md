@@ -63,7 +63,24 @@ PRODUCT_COPY_FILES += \
     vendor/gapps/arm64/proprietary/product/lib/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libjni_latinimegoogle.so \
     vendor/gapps/arm64/proprietary/product/lib64/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libjni_latinimegoogle.so
 ```
+Open `external/elfutils/lib/Android.bp` and add "crc32.c" as below
+```
+package {
+    default_applicable_licenses: ["external_elfutils_license"],
+}
 
+cc_library_host_static {
+    name: "libeu",
+    defaults: ["elfutils_defaults"],
+    srcs: ["*.c"],
+    exclude_srcs: [
+        "color.c", // uses argp
+        "dynamicsizehash*.c",
+        "printversion.c", // uses argp
+        "crc32.c",
+    ],
+}
+```
 ## 3. Upload ##
 Create OAuth client ID for TV and Limited input devices to generate client_id and client_secret
 Save the below file as curlgoogle into `~/bin`
