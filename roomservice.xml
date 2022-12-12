@@ -46,9 +46,4 @@
     <remove-project name="platform/external/zlib" />
     <project name="android_external_zlib-ng"                    path="external/zlib"                    remote="acmeui"         revision="taffy" />
 
-    <!-- mimalloc and bionic -->
-    <remove-project name="crdroidandroid/android_bionic" />
-    <project name="android_bionic"                              path="bionic"                           remote="source"         revision="13.0" />
-    <project name="android_external_mimalloc"                   path="external/mimalloc"                remote="acmeui"         revision="taffy" />
-
 </manifest>
