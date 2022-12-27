@@ -4,7 +4,6 @@
     <!--Remotes-->
     <remote name="source"          fetch="https://github.com/awakened1712"/>
     <remote name="LineageOS"       fetch="https://github.com/LineageOS" />
-    <remote name="linux4"          fetch="https://github.com/Linux4"/>
     <remote name="mtg"             fetch="https://gitlab.com/MindTheGapps"/>
     <remote name="acmeui"          fetch="https://github.com/AcmeUI"/>
 
@@ -29,7 +28,7 @@
     <project name="android_vendor_samsung_exynos9820-common"    path="vendor/samsung/exynos9820-common" remote="source"         revision="android-13"   clone-depth="1" />
 
     <!--Kernel Tree-->
-    <project name="android_kernel_samsung_exynos9820"           path="kernel/samsung/exynos9820"        remote="linux4"         revision="lineage-20.0"   clone-depth="1" />
+    <project name="android_kernel_samsung_exynos9820"           path="kernel/samsung/exynos9820"        remote="source"         revision="lineage-20" />
 
     <!-- Dependencies -->
     <project name="android_device_samsung_slsi_sepolicy"        path="device/samsung_slsi/sepolicy"     remote="source"         revision="android-13" />
